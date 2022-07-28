@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Borda</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        border:20px solid black;
+        border-image-source: url('frame-border-corner-512.webp');
+        border-image-slice: 118;
+        border-image-repeat: repeat;
+        /*O border-image-source seleciona a imagem de borda.
+        O border-image-slice corta a imagem para inserí-la na borda
+        O border-image-repeat seleciona o tipo de repetição da imagem escolihia ao longo da borda
+        É possível usar o shorthand:border:
+        border-image: 'border-image-source' 'border-image-slice' border-image-repeat';
+        Exatamente nessa ordem*/
+    }
+</style>
+<body>
+    <h1>Teste de Borda</h1>
+</body>
+</html>

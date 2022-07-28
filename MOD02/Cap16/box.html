@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap - 16</title>
+</head>
+<style>
+    body{
+        margin:0;
+        background: fixed linear-gradient(to bottom right, red, black);
+    }
+    header > h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        font-weight: bolder;
+        margin: auto;
+        text-align: center;
+    }
+    nav{
+        flex-direction: row;
+        display: flex;
+        margin: auto;
+        background: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    nav > a{
+        text-decoration: none;
+        color: bisque;
+        font-weight: bold;
+        padding-right: 50px;
+        text-align: center;
+        margin: auto;
+    }
+    nav > a:hover{
+        text-decoration: dashed;
+        background: red;
+    }
+    main{
+        height:83vh;
+    }
+    #Noticias1{
+        background: rgba(0, 0, 0, 0.568);
+        margin: 10px 40px;
+        height:95%;
+        border-radius: 20px 0;
+        /*O primiero valor de border-radious refere-se as bordas superior esquerda e inferior da direita
+        O segundo valor refere-se a borda superios da direita e inferior da esquerda.*/
+        /* sombras de caixas: 
+        border-box: "deslocamento horizontal" "deslocamento vertical espalhamento";
+        se iniciar com "inset", o espalhamento vai para o interior da caixa, causando um efeito de profundidade*/
+        
+    }
+    #Noticias1 > h2 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 900;
+        color: bisque;
+        text-align: center;
+
+        
+    }
+    #Noticias1 > p {
+        text-align: justify;
+        padding: 2px 10px;
+        text-indent: 7px;
+        color: bisque;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    footer{
+        background: black;
+        margin: 0%;
+        padding 5px;
+    }
+    footer > address{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: bisque;
+    }
+
+
+</style>
+<body>
+<header>
+<h1>Meu Site</h1>
+<nav>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+    <a href="#">Link 5</a>
+</nav>
+</header>
+<main>
+    <section id="Noticias1">
+       <h2>Noticias do Flamento</h2>  
+        <p>Agora é oficial, William Arão deixa o Flamengo rumo ao Fenerbahçe por 3 milhões de Euros</p>
+        <p>Diego Ribas girou tanto no treino que foi confundido com o Baú da Felicidade.</p>
+    </section>
+</main>    
+<footer><address>Desenvolvido por Mim Mesma</address></footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!---
+                    Cores - Aula 15
+        palleton, adobe color e coolor-->
+    <!--Cores primárias: vermelho, amarelo e azul;
+    Cores secundárias: Verde, laranja e violeta-->
+    <!--
+                    Tipografia - Aula 14 - CSS
+                font-size: define o tamanho da fonte. Pode ser medida em unidades absolutas(cm, mm, in, px*, pc, pt) ou em unidades relativas (em*- relatina a altura do M maiúsculo de uma fonte, ex - relativo ao x minúsculo de uma fonte, rem*-é relativo ao M maiúsculo da fonte configurada no body, vw - relativa a largura do viewport, vh- relativa a altura do viewport, % );
+                font-wight: pode ser light, lighter ou bold, mas também pode ser numérica, que varia de 100 até 900;
+                font-style: define o estilo da fonte, podendo ser normal ou italic;
+                text-decoration: define a decoração da fonte, para incluir um subilinhado, por exemplo.
+                a forma mais curta de atribuit essas caracteristicas a fonte, é com a declaração font. Ela é feita da seguinte forma:
+                font: font-style font-weight font-size font-family;
+                sem virgulas e nessa exata ordem.
+
+        Fontes externas: para inserir uma fonte que não está incluída nas opções de font-family do VSCode, é possível pegar do google fonts e inseri-la no css etravés da regra @import url(endereço)
+        ou baixar.Se for baixar, você deverá salvar as fontes na pasta do html/css ou em uma pasta dentro do seu projeto para fontes e utilizar o seletor especial @font-face. Siga o exemplo abaixo
+        @font-face{
+            font-family: Nome ;
+            src: url(nome do aqruivo.extensão) format(formato do arquivo);
+            font-weight: ;
+            font-size: ;
+        }
+            Formatos de Fonte
+         - opentype:(otf);
+         - truetype:(ttf);
+         - embedded-opentype;
+         - truetype.aat:(Apple Advanced Tipography)
+         para identificar fontes, é possivel utilizar a extensão font ninja no seu navegador para identificar fontes em textos, e os sites "https://www.fontsquirrel.com/matcherator" ou "https://www.myfonts.com/WhatTheFont/" para identificar fontes de imagens.
+        
+            Alinhamento de texto
+        text-align: alinha o texto em relação a uma div, tabela ou tela;
+        text-indent: serve para "pararagrafar" os textos;
+
+                id, classe e pseudo-classe.
+            No HTML pode-se dar um id a uma determinada tag, e representa-la como '#'' no css. 
+            Exemplo 1:
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1#principal{
+            text-align: center;
+        }
+        h1{
+            text-align: justify:
+        }
+    </style>
+</head>
+<body>
+    <h1 id="principal"> Titulo Principal</h1>
+        <h1>Titulo 1</h1>
+        <p>Texto texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto, texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto.</p>
+        <h1>Titulo 2</h1>
+        <p>Texto texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto, texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto.</p>
+        <h1>Titulo 2</h1>
+        <p>Texto texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto, texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto.</p>
+</body>
+</html>
+        Tudo em HTML que for class, em css será representado por '.'.
+        Exemplo 2:
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{ 
+            background: white;
+        }
+        .caderno{
+            background: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main>"
+        <h1 id="principal"> Titulo Principal</h1>
+         <div class="caderno">   
+                <h1>Titulo 1</h1>
+                <p>Texto texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto, texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto.</p>
+                <h1>Titulo 2</h1>
+                <p>Texto texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto, texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto.</p>
+                <h1>Titulo 2</h1>
+                <p>Texto texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto, texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto.</p>
+            </div>
+    </div>
+</body>
+</html>
+OBS: os id pecisam ser únicos, as class não precisam.
+    As pseudo classes são usadas no CSS3 e são simbolizadas pelo :
+    Exemplo 3:
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{ 
+            background: white;
+        }
+        .caderno{
+            background: gray;
+        }
+        caderno a:hover{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main>"
+        <h1 id="principal"> Titulo Principal</h1>
+         <div class="caderno">   
+                <h1>Titulo 1</h1>
+                <p>Texto texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto, texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto.</p>
+                <h1>Titulo 2</h1>
+                <p>Texto texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto, texto texto, texto texto texto, texto texto texto texto texto texto texto texto texto texto texto texto, texto texto texto texto texto texto texto texto texto.</p>
+                <h1>Links</h1>
+                <ul>
+                    <li><a href="www.link1.com">Link 1</a></li>
+                    <li><a href="www.link2.com">Link 2</a></li>
+                    <li><a href="www.link3.com">Link 3</a></li>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>
+    Pseudo elementos, são elementos adicionados via CSS e são representados por '::';
+    tags filhas é representada por '>';
+    -->
+</body>
+</html>

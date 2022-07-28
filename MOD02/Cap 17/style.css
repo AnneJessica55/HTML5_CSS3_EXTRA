@@ -1,0 +1,41 @@
+
+body{
+    display: flex;
+    margin: auto;
+
+}
+main{ display: flex;
+margin: 20% auto;
+justify-content: space-around;
+}
+.um{
+    height: 300px;
+    width:300px;
+    background: #2E5E3B;
+    display: flex;
+}
+.d2{
+    height: 300px;
+    width:300px;
+    background: #B4E3C0;
+    display: flex;
+}
+.t3{
+    height: 300px;
+    width:300px;
+    background: #6DDE8B;
+    display: flex;
+}
+.q4{
+height: 300px;
+width:300px;
+background: #4B5E50;
+display: flex;
+}
+
+.q4{
+height: 300px;
+width:300px;
+background: #54AB6B;
+display: flex;
+}
