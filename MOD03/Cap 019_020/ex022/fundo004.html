@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #conteiner{
+            /*Geralmente ele já é relativo*/
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+            background-image: url(img/target001.png);
+            background-size: 100% 100%;
+        }
+        #conteudo{
+            position:absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /*Para centralizar uma caixa em relação ao fundo, será necessário aplicar a propriedade position.
+            Relative é o funso, absolute é o objeto que deseja centreralizar.
+            Utiliza-se as propriedades  top e left em % cada
+            E para fazer o centro do caixa conteúdo coincidir com o centro do fundo utiliza-se o transfer: translate();*/
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background-image: url(img/target001.png);
+            background-size: 100% 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    <section  id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
