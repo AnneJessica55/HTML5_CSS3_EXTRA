@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 3 - Efeiro Zebrado</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            margin:60px auto;
+            background-color: black;
+        }
+        caption {
+            background-color: rgb(206, 206, 206);
+        }
+        thead, tfoot {
+            background-color: red;
+            color: azure;
+        }
+        td{
+            
+            color: ghostwhite;
+            border:1px solid ghostwhite;
+            text-align: center;
+            padding:5px;
+        }
+        td.preco{ 
+            text-align: right;
+            width:100px;
+        }
+        tbody > tr:nth-child(even) /*pode ser nos valores pares(even) ou ímpar (odd) ou pulando casa 3n, 4n,etc*/{
+            background-color: red;
+        }
+        
+     
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela de Preços de Livros</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome do Livro</th>
+                <th scope="col">Preço (R$)</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">Total (R$)</th>
+                <td class="preco">460.20</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Marighella: O Guerrilhero que incendiou o mundo</td>
+                <td class="preco">47.14</td>
+            </tr>
+            <tr><td>Por um Feminismo Afro-Latinoamericano</td><td class="preco">39.90</td></tr>
+            <tr>
+                <td>Paranormalidade: Por que vemos o que não existe?</td>
+                <td class="preco">37.88</td>
+            </tr>
+            <tr>
+                <td>Semiótica Aplicada</td>
+                <td class="preco">85.90</td>
+            </tr>
+            <tr>
+                <td>Política: Propaganda e Manipulação</td>
+                <td class="preco">33.67</td>
+            </tr>
+            <tr>
+                <td>Moro: O herói construído pela mídia</td>
+                <td class="preco">42.23</td>
+            </tr>
+            <tr>
+                <td>Para Educar Crianças Feministas</td>
+                <td class="preco">17.86</td>
+            </tr>
+            <tr>
+                <td>O perígo de uma história única</td>
+                <td class="preco">20.50</td>
+            </tr>
+            <tr>
+                <td>Eterna Vigilância: Como montei e desvendei o maior sistema de espionagem do mundo</td>
+                <td class="preco">19.89</td>
+            </tr>
+            <tr>
+                <td>Migração e Intolerância</td>
+                <td class="preco">16.29</td>
+            </tr>
+            <tr>
+                <td>Necropolítica</td>
+                <td class="preco">37.40</td>
+            </tr>
+            <tr>
+                <td>Mulher, Raça e Classe</td>
+                <td class="preco">49.40</td>
+            </tr>
+            <tr>
+                <td>Sintomas Mórbidos</td>
+                <td class="preco">30.00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

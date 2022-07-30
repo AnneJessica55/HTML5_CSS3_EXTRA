@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 4 - Cabeçalho Fixo</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            margin:60px auto;
+            color:black;
+            position: relative;
+        }
+        caption {
+            background-color: rgb(182, 182, 235);
+            padding: 5px;
+            border-radius: 5px 5px 0 0;
+        }
+        thead, tfoot {
+            background-color: darkblue;
+            color: azure;
+        }
+        thead > tr > th { 
+            background-color: darkblue;
+            position: sticky;
+            top:-1px;
+        }
+        td{
+            border:1px solid ghostwhite;
+            text-align: center;
+            padding:5px;
+        }
+        td.preco{ 
+            text-align: right;
+            width:100px;
+        }
+        tbody > tr:nth-child(even) /*pode ser nos valores pares(even) ou ímpar (odd) ou pulando casa 3n, 4n,etc*/{
+            background-color: rgb(182, 182, 235);
+        }
+        tfoot {
+            border-radius: 0 0 5px 5px;
+        }
+        p {
+            font-family: arial;
+            text-align: justify;
+            text-indent: 20px;
+            padding: 0 10px;
+        }
+     
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>Tabela de Preços de Livros</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome do Livro</th>
+                <th scope="col">Preço (R$)</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">Total (R$)</th>
+                <td class="preco">1492.77</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Marighella: O Guerrilhero que incendiou o mundo</td>
+                <td class="preco">47.14</td>
+            </tr>
+            <tr><td>Por um Feminismo Afro-Latinoamericano</td><td class="preco">39.90</td></tr>
+            <tr>
+                <td>Paranormalidade: Por que vemos o que não existe?</td>
+                <td class="preco">37.88</td>
+            </tr>
+            <tr>
+                <td>Semiótica Aplicada</td>
+                <td class="preco">85.90</td>
+            </tr>
+            <tr>
+                <td>Política: Propaganda e Manipulação</td>
+                <td class="preco">33.67</td>
+            </tr>
+            <tr>
+                <td>Moro: O herói construído pela mídia</td>
+                <td class="preco">42.23</td>
+            </tr>
+            <tr>
+                <td>Para Educar Crianças Feministas</td>
+                <td class="preco">17.86</td>
+            </tr>
+            <tr>
+                <td>O perígo de uma história única</td>
+                <td class="preco">20.50</td>
+            </tr>
+            <tr>
+                <td>Eterna Vigilância: Como montei e desvendei o maior sistema de espionagem do mundo</td>
+                <td class="preco">19.89</td>
+            </tr>
+            <tr>
+                <td>Migração e Intolerância</td>
+                <td class="preco">16.29</td>
+            </tr>
+            <tr>
+                <td>Necropolítica</td>
+                <td class="preco">37.40</td>
+            </tr>
+            <tr>
+                <td>Mulher, Raça e Classe</td>
+                <td class="preco">49.40</td>
+            </tr>
+            <tr>
+                <td>Sintomas Mórbidos</td>
+                <td class="preco">30.00</td>
+            </tr>
+            <tr>
+                <td>Pensamento Feminista Hoje: Perspectivas decoloniais</td>
+                <td class="preco">74.30</td>
+            </tr>
+            <tr>
+                <td>O Povo Contra a Democracia</td>
+                <td class="preco">61.52</td>
+            </tr>
+            <tr>
+                <td>Sobre o Autoritarismo Brasileiro</td>
+                <td class="preco">40.90</td>
+            </tr>
+            <tr>
+                <td>Racismo, sexismo e desigualdade no Brasil</td>
+                <td class="preco">24.57</td>
+            </tr>
+            <tr>
+                <td>A Pátria Educadora em Colapso</td>
+                <td class="preco">24.00</td>
+            </tr>
+            <tr>
+                <td>Sociologia do negro brasileiro</td>
+                <td class="preco">55.93</td>
+            </tr>
+            <tr>
+                <td>Como mudar o mundo</td>
+                <td class="preco">42.35</td>
+            </tr>
+            <tr>
+                <td>Nem preto nem branco muito pelo contrário</td>
+                <td class="preco">38.32</td>
+            </tr>
+            <tr>
+                <td>História das mulheres Histórias feministas</td>
+                <td class="preco">116.25</td>
+            </tr>
+            <tr> 
+                <td>
+                    Anatomia do Estado
+                </td>
+                <td class="preco">20.93</td>
+            </tr>
+            <tr>
+                <td>O Capital: Livro 2</td>
+                <td class="preco">74.89</td>
+            </tr>
+            <tr>
+                <td>
+                    O Capital: Livro 3
+                </td>
+                <td class="preco">
+                    42.81
+                </td>
+            </tr>
+            <tr>
+                <td>O genocídio negro brasileiro: Processo de um racismo mascarado</td>
+                <td class="preco">42.91</td>
+            </tr>
+            <tr>
+                <td>O Facísmo eterno</td>
+                <td class="preco">19.90</td>
+            </tr>
+            <tr>
+                <td>O Capital do Século XXI</td>
+                <td class="preco">69.90</td>
+            </tr>
+            <tr>
+                <td>A república das Milícias</td>
+                <td class="preco">45.86</td>
+            </tr>
+            <tr>
+                <td>Crônicas da casa assassinada</td>
+                <td class="preco">71.92</td>
+            </tr>
+            <tr>
+                <td>Grande sertão: veredas</td>
+                <td class="preco">66.42</td>
+            </tr>
+            <tr>
+                <td>Por que as pessoas acreditam em coisas estranas?</td>
+                <td class="preco">39.14</td>
+            </tr>
+            <tr>
+                <td>O Sol é para todos</td>
+                <td class="preco">41.89</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis corporis reiciendis reprehenderit iusto soluta consequuntur explicabo dignissimos quod ut porro similique at vitae ab expedita, nihil nesciunt obcaecati inventore itaque.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo harum aut odio laudantium atque excepturi, asperiores natus libero dolore quidem sed quasi beatae magnam labore inventore doloremque saepe, et eum!Lorem</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam maxime tempora earum error tenetur magni laboriosam repellendus nemo reprehenderit placeat rem, quos laborum, iusto nulla eveniet odio. Atque, numquam?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis corporis reiciendis reprehenderit iusto soluta consequuntur explicabo dignissimos quod ut porro similique at vitae ab expedita, nihil nesciunt obcaecati inventore itaque.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo harum aut odio laudantium atque excepturi, asperiores natus libero dolore quidem sed quasi beatae magnam labore inventore doloremque saepe, et eum!Lorem</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam maxime tempora earum error tenetur magni laboriosam repellendus nemo reprehenderit placeat rem, quos laborum, iusto nulla eveniet odio. Atque, numquam?</p>  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis corporis reiciendis reprehenderit iusto soluta consequuntur explicabo dignissimos quod ut porro similique at vitae ab expedita, nihil nesciunt obcaecati inventore itaque.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo harum aut odio laudantium atque excepturi, asperiores natus libero dolore quidem sed quasi beatae magnam labore inventore doloremque saepe, et eum!Lorem</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam maxime tempora earum error tenetur magni laboriosam repellendus nemo reprehenderit placeat rem, quos laborum, iusto nulla eveniet odio. Atque, numquam?</p>  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis corporis reiciendis reprehenderit iusto soluta consequuntur explicabo dignissimos quod ut porro similique at vitae ab expedita, nihil nesciunt obcaecati inventore itaque.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo harum aut odio laudantium atque excepturi, asperiores natus libero dolore quidem sed quasi beatae magnam labore inventore doloremque saepe, et eum!Lorem</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, magnam maxime tempora earum error tenetur magni laboriosam repellendus nemo reprehenderit placeat rem, quos laborum, iusto nulla eveniet odio. Atque, numquam?</p>
+</body>
+</html>
