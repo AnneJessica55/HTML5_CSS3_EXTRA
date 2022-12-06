@@ -1,0 +1,59 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    min-height: 100vh;
+    width: 99.9vw;
+    background-color: black;
+}
+main{
+    height: 110vh;
+    position: relative;
+}
+
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    /*Com esses comandos, épossível colocar a section#telefone exatamente no meio da tela.*/
+    height: 627px;
+    width: 311px;
+    background-color: blue;
+    background: url('../pacote-d013/pacote-d013/imagens/frame-iphone.png') no-repeat;
+}
+body{
+    background: url(../pacote-d013/pacote-d013/imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+section#telefone > iframe#tela {
+    position: relative;
+    top: 80px;
+    left:22px;
+    height: 471px;px;
+    width:265px;
+}
+section#telefone > iframe#tela > p {
+    text-align: center;
+    width:200;
+}
+section#redes-sociais {
+    text-align: right;
+}
+section#redes-sociais > a > img{
+    width:50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    /*Border-radius:50%; transforma uma imagem quadrada em uma imagem circular*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.753);
+}
+section#redes-sociais > a > img:hover {
+    border: 2px solid white;
+    transform: translate(-3px, -3px);
+    transition: transform 0.25s;
+}
