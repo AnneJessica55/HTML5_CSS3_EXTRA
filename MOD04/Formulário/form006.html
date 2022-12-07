@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cores</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Selecione A Cor Desejada</legend>
+            <p>
+                <input type="color" name="cor" id="icor" value="#42CCBB">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Nível de Satisfação</legend>
+            <input type="range" name="satisfacao" id="isatisf" min="0" max="10">
+        </fieldset>
+        <fieldset>
+            <legend>Escolha Sua Foto de Perfil</legend>
+            <input type="file" name="profile-photo" id="prophoto">
+            <!--Quando precisar utilizar o envio de arquivos, é necessário utilizar o método post no formulário.-->
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

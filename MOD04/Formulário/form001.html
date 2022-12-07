@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Esse é meu primeiro formulário</h1>
+    <form action="cadastro.php" method="get">
+        <!--Utiliza-se o metodo get quando os dados fornecidos não forem sensíveis ou que seus compartilhamentos sejam desejado. Por método GET não se pode utilizar mais de 3000bytes.-->
+        <p>
+            <label for="inome">Nome:</label><br> <!--o for="id/name" pode receber os valores de name="name" ou id="id", mas é sempre interessante que receba os valores de id, pois são únicos.-->
+                <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label><br>
+                <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+            <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>

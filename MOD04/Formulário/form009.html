@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrando a avaliação</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Deixe aqui sua avaliação</legend>
+            <input type="range" name="nota" id="inota" min="0" max="10" oninput="ival.innerHTML= Number(inota.value)" value="0">
+            <output id="ival">0</output>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

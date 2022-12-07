@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redios e checkboxes</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="POST">
+        <fieldset>
+            <legend>Esporte favorito</legend>
+            
+            <input type="checkbox" name="futebol" id="ifut" value="futebol"><label for="ifut">Futebol</label>
+            <input type="checkbox" name="volei" id="ivolei" value="volei"><label for="ivolei">Voleibol</label>
+            <input type="checkbox" name="taekwondo" id="itaeko" value="taekwondo"><label for="itaeko">Taekwondo</label>
+            <input type="checkbox" name="karate" id="ikarate" value="karate"><label for="ikarate">Karatê</label>
+            <input type="checkbox" name="handbol" id="ihandbol" value="handbol"><label for="ihandbol">Handbol</label>
+            <input type="checkbox" name="natacao" id="inatacao" value="natacao"><label for="inatacao">Natação</label>
+            <input type="checkbox" name="capoeira" id="icapo" value="capoeira"><label for="icapo">Capoeira</label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Sexo
+            </legend>
+            <p>
+                <input type="radio" name="sexo" id="ifem" value="feminino" checked><label for="ifem" >Feminino</label>
+                <input type="radio" name="sexo" id="imas" value="masculino"><label for="imas">Masculino</label>
+                <input type="radio" name="sexo" id="itrans" value="transsexual"><label for="itrans">Transsexual</label>
+                <input type="radio" name="sexo" id="inbin" value="nao-binario"><label for="nbin">Não Binário</label>
+                <input type="radio" name="sexo" id="ioutros" value="outros"><label for="ioutros">Outros</label>
+
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+  
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="cagastro.php" method="POST" autocomplete="on">
+        <caption>Cadastre-se aqui!</caption>
+        <p>
+            <label for="inome">Nome:</label><br>
+            <input type="text" name="nome" id="inome" size="30" minlength="5" maxlength="40" 
+            placeholder="Digite seu nome completo." autocomplete="name" required>
+        </p>
+        <p>
+            <label for="iidade">Idade:</label><br>
+            <input type="number" name="idade" id="iidade" maxlength="3" size="3" required>
+        </p>
+        <p>
+            <label for="icep">CEP:</label><br>
+            <input type="number" name="cep" id="icep" required>
+        </p>
+        <p>
+            <label for="iperiod">Período Letivo:</label><br>
+            <input type="date" name="period" id="iperiod" value="2022-12-06">
+        </p>
+        <p>
+            <label for="ihora">Horário da prova:</label><br>
+            <p><input type="time" name="hora" id="ihora"></p>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
