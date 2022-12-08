@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*Typical Device Breakpoint
+-------------------------------------------
+Pequenas Telas: até 600px
+Celular: até 768px
+Tablet: até 992px
+Desktop: até 1200px
+Grandes Telas: acima de 1200px
+*/
+@media screen and (min-width:768px) {
+    img.menu{
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        background-color: #006644;
+        padding:10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        display: inline-block;
+    }
+    menu > ul > li:hover {
+        background-color: azure;
+    }
+    menu > ul > li > a {
+        border-top: none;
+    }
+    menu > ul > li > a:hover {
+        border-top: none;
+        color: #006644;
+        text-shadow:  1px 1px 1px #003020;
+    }
+    main{
+        max-width: 768px;
+    }
+}

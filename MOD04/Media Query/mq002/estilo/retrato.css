@@ -1,6 +1,5 @@
 @charset "UTF-8";
-body{
-    background: URL(../imagens/cev-portrait.jpg);
-    background-position: left bottom;
-    background-repeat: no-repeat;
+body {
+    background-image: URL(../imagens/cev-portrait.jpg);
+    background-position:center bottom;
 }
